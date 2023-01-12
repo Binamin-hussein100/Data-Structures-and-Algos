@@ -1,5 +1,9 @@
 # ARRAY
 - An array is a contiguous (unbroken without interuptions) of equal sized elements indexed by contiguous integers.
+
+## Types of Arrays
+- One dimentional array
+- Multidimentional array
    
 ### MultiDimentional Array
 - An array that contains one or more arrays within it.  
