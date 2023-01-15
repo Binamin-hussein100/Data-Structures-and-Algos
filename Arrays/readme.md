@@ -24,3 +24,13 @@
 - Deletion
 - Searching
 - Sorting
+
+### Ops
+- indexOf(n) => returns the index of n
+- push() => Add element to the end of array
+- pop() => Remove element from the end of array
+- unshift() => Add element to the beginning of array
+- shift() => Subtract element from the beginning of array
+- find() => returns the first element that satisfies the callback fn that you give it.
+- slice() => returns a new array that is a portion of the old array. It takes a start and end index and returns everything in between.
+- splice() => adds or removes elements from an array. Takes in a start index, delete count(elements you want to remove) and whatever elements you want to add.
