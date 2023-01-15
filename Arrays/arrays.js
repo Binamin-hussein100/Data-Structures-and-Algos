@@ -14,4 +14,13 @@ console.log(nums) // [ 2, 4, 7 ]
 
 // unshift() => Add element to the beginning of array
 nums.unshift(100)
-console.log(nums) // 
+console.log(nums) // [ 100, 2, 4, 7 ]
+
+// find() => returns the first element that satisfies the callback fn that you give it.
+const firstEven = nums.find((n)=>{
+    if(n % 2 == 0){
+        return true
+    }
+})
+
+console.log(firstEven)
