@@ -65,9 +65,8 @@ const byEyeColor = characters.reduce((acc,cur) => {
     }
     return acc
 },{})
-console.log(byEyeColor)
 //4. Get total number of characters in all the character names
-
+const totalCharacter = characters.reduce((acc, cur)=>acc + cur.name.length,0)
 //***FILTER*** => Creates a new array and loops through adding the elements that pass the boolean test.
 
 //1. Get characters with mass greater than 100
@@ -87,6 +86,7 @@ const maleCharacters = characters.filter(x=>{
 const allFemale = characters.filter(x=>{
     return x.gender ==='female';
 })
+
 
 //***SORT***
 //1. Sort by mass
