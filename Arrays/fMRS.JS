@@ -42,16 +42,18 @@ const objprop = characters.map(x =>{
         height: x.height
     }
 })
-console.log(objprop)
 
 //4. Get array of all first names
 const firstName = characters.map(x =>{
     return(x.name.split(" ")[0])
 })
-console.log(firstName)
-//***REDUCE***
+//***REDUCE*** 
 //1. Get total mass of all characters
+const totalMass = characters.reduce((acc,cur) =>acc + cur.mass,0)
 //2. Get total height of all characters
+const totalHeight = characters.reduce((acc,cur) =>acc + cur.height,0)
+console.log(totalHeight)
+
 //3. Get total number of characters by eye color
 //4. Get total number of characters in all the character names
 
