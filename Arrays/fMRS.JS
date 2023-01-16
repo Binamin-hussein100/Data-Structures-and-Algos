@@ -47,14 +47,25 @@ const objprop = characters.map(x =>{
 const firstName = characters.map(x =>{
     return(x.name.split(" ")[0])
 })
+
+
 //***REDUCE*** 
 //1. Get total mass of all characters
 const totalMass = characters.reduce((acc,cur) => acc + cur.mass,0)
 //2. Get total height of all characters
 const totalHeight = characters.reduce((acc,cur) => acc + cur.height,0)
-console.log(totalHeight)
 
 //3. Get total number of characters by eye color
+const byEyeColor = characters.reduce((acc,cur) => {
+    let eyes = cur.eye_color
+    if(acc[eyes]){
+            acc[eyes]++
+    }else{
+        acc[eyes] = 1
+    }
+    return acc
+},{})
+console.log(byEyeColor)
 //4. Get total number of characters in all the character names
 
 //***FILTER*** => Creates a new array and loops through adding the elements that pass the boolean test.
