@@ -23,4 +23,21 @@ const firstEven = nums.find((n)=>{
     }
 })
 
-console.log(firstEven)
+console.log(firstEven) // 100
+
+// slice() => returns a new array that is a portion of the old array. It takes a start and end index and returns everything in between.
+const sliceWay = nums.slice(1)
+console.log(sliceWay)
+
+// - splice() => adds or removes elements from an array. Takes in a start index, delete count(elements you want to remove) and whatever elements you want to add.
+
+const fruit = ['Banana',"Orange","Green","Mango"]
+fruit.splice(3,0,"apple")
+fruit.splice(2,1,"peach")
+console.log(fruit)
+
+// indexOf(n) => returns the index of n
+console.log(fruit.indexOf("peach")) // returns -1 if the value passed does not exist
+
+
+
