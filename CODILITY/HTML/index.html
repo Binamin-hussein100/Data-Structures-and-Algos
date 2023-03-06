@@ -1,0 +1,33 @@
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password (min. 8 characters):</label>
+    <input type="password" id="password" name="password" minlength="8" required>
+    
+    <fieldset>
+      <legend>Referrer:</legend>
+      <label>
+        <input type="radio" name="referrer" value="tv" required>
+        TV
+      </label>
+      <label>
+        <input type="radio" name="referrer" value="internet" required>
+        Internet
+      </label>
+      <label>
+        <input type="radio" name="referrer" value="none" required checked>
+        None
+      </label>
+    </fieldset>
+    
+    <label>
+      <input type="checkbox" name="terms" required>
+      I accept the terms of service
+    </label>
+    
+    <button type="submit">Register</button>
+  </form>
