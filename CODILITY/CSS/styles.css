@@ -207,6 +207,10 @@
   height: 20%;
 }
 
+#nav > li{
+  height: 20%;
+}
+
 #nav li a {
   background: #cfcfcf;
   display: block;
@@ -223,6 +227,15 @@
   color: #FFFFFF;
 }
 
+#nav li:hover > ul  {
+  display: flex;
+  flex-direction: column;
+}
+
+#nav li ul li:hover >ul {
+  display: flex;
+  flex-direction: row;
+}
 
 
 #nav li ul {
