@@ -1,0 +1,162 @@
+/* * {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    width: 960px;
+    margin: 50px auto;
+}
+
+#nav {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+#nav ul {
+    background: #cfcfcf;
+    height: 40px;
+    list-style: none;
+}
+
+#nav > li > ul {
+    position: absolute;
+}
+
+#nav li a {
+    background: #cfcfcf;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    line-height: 40px;
+    padding: 0px 25px;
+}
+
+#nav li a:hover {
+    text-decoration: none;
+    background: #915fa6;
+    color: #FFFFFF;
+}
+
+
+
+#nav li ul {
+    background: #000000;
+    display: none;
+    height: auto;
+    width: 100%;
+}
+
+#nav li li{
+    width: 100%;
+}
+
+#nav li ul a {
+    text-align: left;
+    display: block;
+    height: 40px;
+    padding: 0px 10px 0px 25px;
+} */
+
+
+
+
+
+
+/* CONT */
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  #container {
+    width: 100%;
+    max-width: 960px;
+    margin: 50px auto;
+  }
+  
+  #nav {
+    font-weight: 300;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #nav ul {
+    background: #cfcfcf;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  
+  #nav > li > ul {
+    position: absolute;
+  }
+  
+  #nav li {
+    position: relative;
+    flex-grow: 1;
+  }
+  
+  #nav li a {
+    background: #cfcfcf;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    line-height: 40px;
+    padding: 0px 25px;
+    position: relative;
+  }
+  
+  #nav li a:hover {
+    text-decoration: none;
+    background: #915fa6;
+    color: #FFFFFF;
+  }
+  
+  #nav li:hover > ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #nav li ul {
+    background: #000000;
+    display: none;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+  }
+  
+  #nav li ul li {
+    position: relative;
+  }
+  
+  #nav li ul li:hover > ul {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left: 100%;
+  }
+  
+  #nav li ul ul {
+    top: 0;
+    left: 100%;
+  }
+   
+
+
+
+/* RE_DO */
+
+/* #listy li{
+display: inline-block;
+} */
+
+
